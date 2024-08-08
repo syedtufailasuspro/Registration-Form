@@ -1,0 +1,163 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Poppins',sans-serif;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    background-image: url(img/GodBG.png);
+    background-size: cover;
+    background-position: top center;
+	height: 100vh; /* Ensure full viewport height */
+	background-color: black;
+	
+	  
+}
+
+nav {
+	width: 100%;
+	padding: 10px 0;
+	z-index: 12;
+}
+
+nav .menu {
+	max-width: 1200px;
+	margin: auto;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 0 20px;
+}
+
+.menu .logo img {
+	width: 100px;
+	padding-top: 12px;
+	
+}
+
+.menu ul{
+	padding-right: 399px;
+}
+
+.menu ul li {
+	display: inline-block
+}
+
+.menu ul li a {
+	text-decoration: none;
+	color: #fff;
+	font-size: 18px;
+	font-weight: 500;
+	padding: 8px 15px;
+	border-radius: 50px;
+	transition: all 0.3s ease;
+
+}
+
+.menu ul li a:hover {
+	background-image: linear-gradient(to right, #d6a93f , #ecdd38);
+	color: #000;
+}
+
+.NavBtns button {
+	height: 50px;
+    width: 250px;
+    border-radius: 50px;
+    border: 2px solid #d8e33b;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 0 10px;
+    cursor: pointer;
+    outline: none;
+    transition: all 0.3s ease;
+    color: #e0ec38;
+    background: transparent;
+	margin-left: 10px; /* Adjust margin as needed */
+}
+
+.NavBtns button:hover {
+    background-image: linear-gradient(to right, #d6a93f , #ecdd38);
+    color: #000;
+}
+
+.wrapper {
+    height: 100%;
+}
+
+.container {
+	width: 1200px;
+	height: 85%;
+	margin: 0 auto;
+	padding: 0 20px;
+}
+
+.InnerDiv {
+    height: 80%;
+    display: flex;
+    align-items: center;
+}
+
+.center {
+    width: 54%;
+}
+
+.center .title {
+	color: #fff;
+	font-size: 70px;
+	font-family: 'Reem Kufi Ink', sans-serif;
+}
+
+.center .sub_des {
+	color: #fff;
+    font-size: 18px;
+    font-weight: 20;
+	margin: 11px 0 25px 0;
+}
+
+.sub-container {
+	display: flex;
+	flex-direction: row;
+  }
+  
+
+.center .btns button {
+	height: 50px;
+	width: 150px;
+	border-radius: 50px;
+	border: none;
+	font-size: 20px;
+	font-weight: 500;
+	padding: 0 10px;
+	cursor: pointer;
+	outline: none;
+	transition: all 0.3s ease;
+	background-image: linear-gradient(to right, #d6a93f , #ecdd38);
+	color: #000;
+}
+
+.center .btns button:hover {
+    border: 2px solid #e3cd3b;
+    color: #ece638;
+    background: transparent;
+}
+
+.checkbtn{
+	font-size: 30px;
+	color: white;
+	float: right;
+	line-height: normal;
+	cursor: pointer;
+	display: none;
+}
+
+#check{
+	display: none;
+}
+
+
+

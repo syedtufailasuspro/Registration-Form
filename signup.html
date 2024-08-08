@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign Up</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      background-image: url(img/games.jpg);
+      background-size: cover;
+      background-position: top center;
+	    height: 100vh; /* Ensure full viewport height */
+      background-color: #080808;
+      color: #ff0000; /* Red text */
+    }
+    .container {
+      margin-top: 50px;
+      text-align: center; /* Align content to center */
+    }
+    .card {
+      background-color: #2c2c2c; /* Dark gray background */
+      color: #ff0000; /* Red text */
+      padding: 30px;
+      border-radius: 10px;
+    }
+    .btn-signup {
+      margin-top: 15px;
+      width: 45%; /* Button covers 45% of the container */
+      background-color: #ff0000; /* Red button */
+      border-color: #ff0000; /* Red border */
+    }
+    .btn-signup:hover {
+      background-color: #8b0000; /* Dark red button on hover */
+      border-color: #8b0000; /* Dark red border on hover */
+    }
+    .btn-login {
+      margin-top: 15px;
+      width: 45%; /* Button covers 45% of the container */
+      background-color: #ff0000; /* Red button */
+      border-color: #ff0000; /* Red border */
+      margin-right: 20px;
+    }
+    .btn-login:hover {
+      background-color: #8b0000; /* Dark red button on hover */
+      border-color: #8b0000; /* Dark red border on hover */
+    }
+    .logo {
+      max-width: 150px; /* Adjust logo size as needed */
+      margin-bottom: 20px; /* Add some space below the logo */
+    }
+    .form-group label {
+      text-align: left; /* Align labels to the left */
+      display: block; /* Make labels appear on a new line */
+    }
+
+    .card-header {
+      background-color: #2c2c2c; /* Dark gray background */
+      color: #ff0000; /* Red text */
+      border-bottom: none; /* Remove border bottom */
+    }
+  </style>
+</head>
+<body>
+  <div class="container" style="width: 1000px;">
+    <div class="col-md-6 mx-auto">
+      <img src="img/GodLogo.png" alt="Logo" class="logo"> <!-- Add your logo here -->
+      <div class="card">
+        <div class="card-header">
+          <h3>Registration Form</h3>
+        </div>
+        <div class="card-body">
+          <form  action="http://localhost:3000/signup" method="post">
+            <div class="form-group">
+                <label for="userType">I want to</label>
+                <select class="form-control" id="userType" name="userType" required>
+                    <option value="gamer">Register as Gamer</option>
+                    <option value="developer">Register as Developer</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="signupName">Username</label>
+                <input type="text" class="form-control" id="signupName" name="signupName" placeholder="Enter name" required>
+            </div>
+            <div class="form-group">
+                <label for="signupPassword">Password</label>
+                <input type="password" class="form-control" id="signupPassword" name="signupPassword" placeholder="Password" required>
+            </div>
+            <div class="form-group">
+              <label for="phoneNumber">Phone Number</label>
+              <input type="number" class="form-control" id="phoneNumber" name="phoneNumber" placeholder="Enter Phone Number" required>
+            </div>
+            <div class="form-group">
+              <label for="DOB">Date of Birth</label>
+              <input type="date" class="form-control" id="DOB" name="DOB" placeholder="Enter DOB" required>
+            </div>
+            <div class="form-group">
+              <label for="gender">Gender</label>
+              <select class="form-control" id="gender" name="gender" required>
+                  <option value="male">Male</option>
+                  <option value="female">Female</option>
+              </select>
+          </div>
+          <div class="form-group">
+            <label for="pinCode">Pincode</label>
+            <input type="number" class="form-control" id="pinCode" name="pinCode" placeholder="Enter Pincode" required>
+          </div>
+            <button type="submit" class="btn btn-primary btn-signup">Submit</button>
+        </form>
+        
+        
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
